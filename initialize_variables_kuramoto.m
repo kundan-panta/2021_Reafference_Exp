@@ -1,7 +1,7 @@
 %#codegen
 
 %% learning?
-learning_switch = 0;
+% learning_switch = 0;
 
 %% CPG output limits
 % in one direction, so half of complete range
@@ -19,10 +19,12 @@ max_rot = 90;
 % ParameterInitialLimits(:,end-1:end) = [180, 180; -180, -180];
 %                
 % means0  = ParameterInitialLimits(2,:) + rand(1,6).*(ParameterInitialLimits(1,:)-ParameterInitialLimits(2,:)); % pick a mean between the limits, each random number is different
-means0  = [80,0,60,0,0,90];
-
+% means0  = [80,0,60,0,0,90];
+% 
 frequency = 0.5; % Hz
-param_init = [means0,frequency]';
+% param_init = [means0,frequency]';
+
+param_init = [80,0,60,0,0,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
 
 frequency_multiplier = 1;                   % frequency multiplier (must be a positive integer)
 
