@@ -45,9 +45,9 @@ w_init  = weight_map*weight_adjust*2*pi*frequency/3;%length(R);
 % NRollouts           = 30;
 % step_time           = 0.005;        % (sec)
 % Angle_sensor2wing   = 0;            % (deg)
-% Offset_st           = 0;            % (deg)
-% Offset_dev_rot      = [0, 90];      % (deg) deviation 1st / rotation 2nd
-% Angle_offset        = [Offset_st, Offset_dev_rot];
+Offset_st           = 0;            % (deg)
+Offset_dev_rot      = [0, 90];      % (deg) deviation 1st / rotation 2nd
+Angle_offset        = [Offset_st, Offset_dev_rot];
 % 
 % %% Trajectory Parameters
 % Nflaps     = 4.5;   % Number of cycles
