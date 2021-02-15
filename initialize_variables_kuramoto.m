@@ -12,19 +12,9 @@ max_rot = 90;
 %% load parameters for CPG into workspace
 
 % initial CPG parameters
-% ParameterLimits = [90,45,90,30,5000,5000;                    % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha]
-%                    40,1e-2,1e-2,-30,-5000,-5000];
-% 
-% ParameterInitialLimits = ParameterLimits;
-% ParameterInitialLimits(:,end-1:end) = [180, 180; -180, -180];
-%                
-% means0  = ParameterInitialLimits(2,:) + rand(1,6).*(ParameterInitialLimits(1,:)-ParameterInitialLimits(2,:)); % pick a mean between the limits, each random number is different
-% means0  = [80,0,60,0,0,90];
-% 
 frequency = 0.5; % Hz
-% param_init = [means0,frequency]';
 
-param_init = [80,0,60,0,0,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
+param_init = [90,20,45,-6,160,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
 
 frequency_multiplier = 1;                   % frequency multiplier (must be a positive integer)
 
