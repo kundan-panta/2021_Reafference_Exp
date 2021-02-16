@@ -1,5 +1,3 @@
-%#codegen
-
 %% learning?
 % learning_switch = 0;
 
@@ -14,7 +12,9 @@ max_rot = 90;
 % initial CPG parameters
 frequency = 0.5; % Hz
 
-param_init = [90,20,45,-6,160,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
+% param_init = [90,20,45,-6,160,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
+param_list = [90,20,45,-6,160,90,frequency;
+              90,20,20,0,160,90,frequency]';
 
 frequency_multiplier = 1;                   % frequency multiplier (must be a positive integer)
 
