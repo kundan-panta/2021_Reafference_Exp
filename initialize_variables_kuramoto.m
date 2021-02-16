@@ -3,9 +3,9 @@
 
 %% CPG output limits
 % in one direction, so half of complete range
-max_stroke = 90;
+max_stroke = 100;
 max_dev = 30;
-max_rot = 90;
+max_rot = 60;
 
 %% load parameters for CPG into workspace
 
@@ -13,8 +13,8 @@ max_rot = 90;
 frequency = 0.5; % Hz
 
 % param_init = [90,20,45,-6,160,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
-param_list = [90,20,45,-6,160,90,frequency;
-              90,20,20,0,160,90,frequency]';
+param_list = [90,20,45,-6,160,90,frequency]';
+%              90,20,20,0,160,90,frequency]';
 
 frequency_multiplier = 1;                   % frequency multiplier (must be a positive integer)
 
