@@ -35,7 +35,7 @@ w_init  = weight_map*weight_adjust*2*pi*frequency/3;%length(R);
 % %% Experiment Parameters
 % NEpisodes           = 30;
 % NRollouts           = 30;
-step_time           = 0.005;        % (sec)
+step_time           = 0.008;        % (sec)
 % Angle_sensor2wing   = 0;            % (deg)
 Offset_st           = 0;            % (deg)
 Offset_dev_rot      = [0, 90];      % (deg) deviation 1st / rotation 2nd
