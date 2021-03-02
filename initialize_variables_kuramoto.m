@@ -10,7 +10,7 @@ max_rot = 60;
 %% load parameters for CPG into workspace
 
 % initial CPG parameters
-frequency = 0.1; % Hz
+frequency = 0.5; % Hz
 
 param_list = [90,20,45,-6,160,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
 % param_list = [30,0,0,0,160,90,frequency;
