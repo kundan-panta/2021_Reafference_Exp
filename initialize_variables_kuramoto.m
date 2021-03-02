@@ -14,8 +14,8 @@ frequency = 0.5; % Hz
 
 % param_list = [90,20,45,-6,160,90,frequency]';         % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha, freq]
 param_list = [30,0,0,0,160,90,frequency;
-             60,0,0,0,160,90,frequency]';
-%              90,0,0,0,160,90,frequency]';
+             60,0,0,0,160,90,frequency;
+             90,0,0,0,160,90,frequency]';
 
 frequency_multiplier = 1;                   % frequency multiplier (must be a positive integer)
 
