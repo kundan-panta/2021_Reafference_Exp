@@ -15,6 +15,13 @@ param_list = [30,0,0,0,160,90;
              60,0,0,0,160,90;
              90,0,0,0,160,90]';
 
+% weight matrix
+weight_map     = [0, 1 , 1;        % connection weight           
+                  1, 0 , 0;         % see Efe paper p. 3 for non-zero
+                  1, 0 , 0];
+
+weight_adjust  = 2;
+
 %%
 % % -------------------------------------------------------------------
 % %  Learning Parameters
@@ -51,13 +58,6 @@ for ii = 1:length(param_list(1,:))
 end
 
 param_list = [param_list;frequencies]; % augment the calculated frequencies
-
-% weight matrix
-weight_map     = [0, 1 , 1;        % connection weight           
-                  1, 0 , 0;         % see Efe paper p. 3 for non-zero
-                  1, 0 , 0];
-
-weight_adjust  = 2;
 
 %% clear vars
 clear Re viscosity Rspan chord rlength R2 ii frequencies
