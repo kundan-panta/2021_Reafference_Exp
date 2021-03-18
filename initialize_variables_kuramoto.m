@@ -11,6 +11,7 @@ max_rot = 60;
 
 % initial CPG parameters
 % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha]'
+% param_list = [0,0,0,0,160,90,0.01];
 param_list = [30,0,0,0,160,90;
              60,0,0,0,160,90;
              90,0,0,0,160,90]';
