@@ -42,7 +42,7 @@ Angle_offset        = [Offset_st, Offset_dev_rot];
 % AoA_offset = -90;   % (deg)Servo cordinates are based on rotation angle and rotation matrices are based on pitching angle (90 is for rotation matrices, - is due to -x of servos is positive in coordinate frame)
 % wait_time  = 4;     % (sec)
 
-Re         = 2000;
+Re         = 1200;
 Re         = min(Re,2000);
 viscosity  = 6e-6;  % (m^2/s)
 Rspan      = 0.18; % (m)
