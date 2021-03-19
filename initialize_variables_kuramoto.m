@@ -13,8 +13,8 @@ max_rot = 60;
 % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha]'
 % param_list = [0,0,0,0,160,90,0.01];
 param_list = [30,0,0,0,160,90;
-             60,0,0,0,160,90;
-             90,0,0,0,160,90]';
+             60,0,0,0,160,90]';
+%              90,0,0,0,160,90]';
 
 % weight matrix
 weight_map     = [0, 1 , 1;        % connection weight           
@@ -53,7 +53,8 @@ R2         = (trapz(rlength,rlength.^2*chord )/(Rspan*chord ))^.5; % (m) wing se
 %% frequency stuff
 frequency_multiplier = 1;                   % frequency multiplier (must be a positive integer)
 
-frequencies = zeros(1,3);
+N_param = length(param_list(1,:)); % number of parameter sets
+frequencies = zeros(1,N_param);
 for ii = 1:length(param_list(1,:))
     frequencies(ii) = findfreq(param_list(:,ii),Re,viscosity,R2,chord,frequency_multiplier);
 end
@@ -61,4 +62,4 @@ end
 param_list = [param_list;frequencies]; % augment the calculated frequencies
 
 %% clear vars
-clear Re viscosity Rspan chord rlength R2 ii frequencies
+clear Re viscosity Rspan chord rlength R2 ii frequencies N_param
