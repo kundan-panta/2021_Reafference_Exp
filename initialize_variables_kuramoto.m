@@ -23,6 +23,18 @@ weight_map     = [0, 1 , 1;        % connection weight
 
 weight_adjust  = 2;
 
+%% Changing the motor and sensor axes
+% motor
+gain_st = -1;
+gain_dev = 1;
+gain_rot = -1;
+
+% sensor
+% describes the default sensor frame in the desired frame: x_d = R_ds * x_s
+R_ds = [0, -1,  0;
+        0,  0, -1;
+        1,  0,  0];
+
 %%
 % % -------------------------------------------------------------------
 % %  Learning Parameters
@@ -34,13 +46,9 @@ weight_adjust  = 2;
 step_time           = 0.008;        % (sec)
 % Angle_sensor2wing   = 0;            % (deg)
 Offset_st           = 0;            % (deg)
-Offset_dev_rot      = [0, 90];      % (deg) deviation 1st / rotation 2nd
-Angle_offset        = [Offset_st, Offset_dev_rot];
-
-% for changing directions of motors
-gain_st = 1;
-gain_dev = 1;
-gain_rot = -1;
+Offset_dev          = 0;            % (deg)
+Offset_rot          = -90;          % (deg)
+Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
 
 %% Trajectory Parameters
 % Nflaps     = 4.5;   % Number of cycles
