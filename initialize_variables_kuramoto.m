@@ -28,7 +28,7 @@ weight_adjust  = 2;
 % %  Learning Parameters
 % % -------------------------------------------------------------------
 % 
-% %% Experiment Parameters
+%% Experiment Parameters
 % NEpisodes           = 30;
 % NRollouts           = 30;
 step_time           = 0.008;        % (sec)
@@ -36,6 +36,11 @@ step_time           = 0.008;        % (sec)
 Offset_st           = 0;            % (deg)
 Offset_dev_rot      = [0, 90];      % (deg) deviation 1st / rotation 2nd
 Angle_offset        = [Offset_st, Offset_dev_rot];
+
+% for changing directions of motors
+gain_st = 1;
+gain_dev = 1;
+gain_rot = -1;
 
 %% Trajectory Parameters
 % Nflaps     = 4.5;   % Number of cycles
