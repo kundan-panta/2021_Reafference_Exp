@@ -11,8 +11,8 @@ max_rot = 60;
 
 % initial CPG parameters
 % [stroke_amp, dev_amp, rot_amp, rot_off, dev_pha, rot_pha]'
-% param_list = [0,0,0,0,160,90,0.01];
-param_list = [30,0,0,0,0,0]';
+param_list = [90,20,45,-6,160,90]';
+% param_list = [30,0,0,0,0,0]';
 %              60,0,0,0,0,0]';
 %              90,0,0,0,0,0]';
 
@@ -25,9 +25,9 @@ weight_adjust  = 2;
 
 %% Changing the motor and sensor axes
 % motor
-gain_st = -1;
+gain_st = 1;
 gain_dev = 1;
-gain_rot = -1;
+gain_rot = 1;
 
 % sensor
 % describes the default sensor frame in the desired frame: x_d = R_ds * x_s
@@ -47,7 +47,7 @@ step_time           = 0.008;        % (sec)
 % Angle_sensor2wing   = 0;            % (deg)
 Offset_st           = 0;            % (deg)
 Offset_dev          = 0;            % (deg)
-Offset_rot          = -90;          % (deg)
+Offset_rot          = 90;          % (deg)
 Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
 
 %% Trajectory Parameters
