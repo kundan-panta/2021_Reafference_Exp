@@ -58,8 +58,8 @@ Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
 Re         = 1000;
 Re         = min(Re,2000);
 viscosity  = 6e-6;  % (m^2/s)
-Rspan      = 0.15; % (m)
-chord      = 0.05; % (m)
+Rspan      = 0.18; % (m)
+chord      = 0.06; % (m)
 rlength    = 0.060:0.0001:(0.060+Rspan);        % (m) wing span variable 0.060 comes from wing base
 R2         = (trapz(rlength,rlength.^2*chord )/(Rspan*chord ))^.5; % (m) wing second moment of area
 
