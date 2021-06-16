@@ -45,7 +45,7 @@ R_ds = [0, -1,  0;
 % NRollouts           = 30;
 step_time           = 0.008;        % (sec)
 % Angle_sensor2wing   = 0;            % (deg)
-Offset_st           = 180;            % (deg)
+Offset_st           = 0;            % (deg)
 Offset_dev          = 0;            % (deg)
 Offset_rot          = -90;          % (deg)
 Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
@@ -55,7 +55,7 @@ Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
 % AoA_offset = -90;   % (deg)Servo cordinates are based on rotation angle and rotation matrices are based on pitching angle (90 is for rotation matrices, - is due to -x of servos is positive in coordinate frame)
 % wait_time  = 4;     % (sec)
 
-Re         = 1000;
+Re         = 1400;
 Re         = min(Re,2000);
 viscosity  = 6e-6;  % (m^2/s)
 Rspan      = 0.18; % (m)
