@@ -1,7 +1,7 @@
 %% Dimensionless numbers that define wing shape and motion
-Ro = 2; % Rossby number, define wing shape
-A_star = [1 3]; % dimensionless stroke amplitude, define flow unsteadiness
-Re = 1200; % Reynolds number
+Ro = 5; % Rossby number, define wing shape
+A_star = [2 3 4]; % dimensionless stroke amplitude, define flow unsteadiness
+Re = 800; % Reynolds number
 
 %% Changing the motor and sensor axes
 % motor
@@ -54,6 +54,7 @@ freq = Re(rr) * viscosity / (4 * amp_stroke * R_gyration * chord);
 
 ii = ii + 1;
 param_list(:,ii) = [amp_stroke_deg;0;0;0;0;0;freq];
+% param_list(:,ii) = [amp_stroke_deg;0;0;0;0;0;0]; % in case I want stationary wing
 
 end
 end

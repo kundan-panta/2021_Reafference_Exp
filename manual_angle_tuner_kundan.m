@@ -4,8 +4,8 @@ start(tg);
 %% show parameters
 tg.ShowParameters = 'on'
 %% update parameters
-stk = 0;
-dev = 0;
+stk = -92;
+dev = -8;
 rot = 0;
 
 setparam(tg, 'Stroke', 'Gain', stk)
