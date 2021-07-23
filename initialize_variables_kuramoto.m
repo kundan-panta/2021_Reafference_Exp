@@ -10,7 +10,7 @@ gain_dev = 1;
 gain_rot = -1;
 Offset_st           = 0;            % (deg)
 Offset_dev          = 0;            % (deg)
-Offset_rot          = -90;          % (deg)
+Offset_rot          = 90;          % (deg)
 Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
 
 % sensor
