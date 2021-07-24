@@ -25,6 +25,7 @@ step_time           = 0.005;        % (sec)
 % Nflaps     = 4.5;   % Number of cycles
 % AoA_offset = -90;   % (deg)Servo cordinates are based on rotation angle and rotation matrices are based on pitching angle (90 is for rotation matrices, - is due to -x of servos is positive in coordinate frame)
 % wait_time  = 4;     % (sec)
+angle_error_delay = 11; % number of time steps to delay set point while calculating angle error
 
 %% Physical Parameters
 viscosity  = 6e-6;  % (m^2/s)
