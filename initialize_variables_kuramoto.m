@@ -8,9 +8,9 @@ Re = 800; % Reynolds number
 gain_st = -1;
 gain_dev = 1;
 gain_rot = -1;
-Offset_st           = 0;            % (deg)
-Offset_dev          = 0;            % (deg)
-Offset_rot          = 90;          % (deg)
+Offset_st           = 0 * gain_st;            % (deg)
+Offset_dev          = 0 * gain_dev;            % (deg)
+Offset_rot          = 90 * gain_rot;          % (deg)
 Angle_offset        = [Offset_st, Offset_dev, Offset_rot];
 
 % sensor
