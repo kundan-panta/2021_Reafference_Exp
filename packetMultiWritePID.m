@@ -86,19 +86,19 @@ switch type
         ID1 = [ID(1), convert32(value(1))];
         ID2 = [ID(2), convert32(value(2))];
         ID3 = [ID(3), convert32(value(3))];
-    case 70     % single read Profile Acceleration
+    case 70     % single read Profile Velocity
         packetLength = [7,0];
         instruction = 2;                    % 0x02 Single read
         parameter = [112, 0, 4, 0];          % [address, data length]
         ID = ID;
-    case 71      % double read Profile Acceleration
+    case 71      % double read Profile Velocity
         packetLength = [9,0];              % 4 parameters for read + 2 IDs + 3 = 9
         instruction = 130;                  % 0x82 Sync read
         parameter = [112, 0, 4, 0];         % [address, data length]
         ID1 = ID(1);
         ID2 = ID(2);
         ID3 = ID(3);
-    case 72      % change Profile Acceleration
+    case 72      % change Profile Velocity
         packetLength = [22, 0];             % 4 parameters for write + 3 IDs + 4 bytes per ID + 3 = 22
         instruction = 131;                  % 0x83 Sync write
         parameter = [112, 0, 4, 0];         % [address, data length]
